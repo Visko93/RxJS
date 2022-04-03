@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'eval-source-map',
-  entry: './src/index.ts',
+  entry: './src/exercise1-2.ts',
   mode: 'development',
   module: {
     rules: [
