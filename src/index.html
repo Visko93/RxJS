@@ -3,12 +3,45 @@
   <head>
     <meta charset="utf-8" />
     <title>RxJS Playground</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .selects {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1em;
+      }
+      .selects select {
+        flex: 1;
+        margin-right: 2em;
+      }
+      #names {
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <h2 class="my-4">RxJS Playground</h2>
       <button id="hello">Click</button>
+      <div class="selects">
+        <select
+          name="names"
+          id="names"
+          aria-label="Names"
+          title="Names"
+          onwaiting="'Loading...'"
+        ></select>
+        <select
+          name="versions"
+          id="versions"
+          aria-label="Versions"
+          title="Versions"
+          onwaiting="'Loading...'"
+        ></select>
+      </div>
     </div>
   </body>
 </html>
